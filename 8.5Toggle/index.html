@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>_8.5Toggle</title>
+    <link href="lib/winjs-4.0.1/css/ui-light.css" rel="stylesheet" />
+    <script src="lib/winjs-4.0.1/js/base.js"></script>
+    <script src="lib/winjs-4.0.1/js/ui.js"></script>
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+</head>
+
+<body class="win-type-body">
+    <!--表格-->
+    <table>
+        <!--第一个toggle-->
+        <tr>
+            <td>
+                Turn on/off
+                <div class="detail">
+                    checked: true
+                </div>
+            </td>
+            <td class="verticalstacking">
+                <div id="wifiToggle" data-win-control="WinJS.UI.ToggleSwitch" data-win-options="{title: 'WiFi', checked: true, onchange: toggleWifi}">
+                </div>
+            </td>
+        </tr>
+
+        <!--第二个toggle 中文-->
+        <tr>
+            <td>
+                Customize on/off label
+                <div class="detail">
+                    in Chinese<br />
+                    labelOn: '&#24320', labelOff: '&#20851'
+                </div>
+            </td>
+            <td>
+                <div data-win-control="WinJS.UI.ToggleSwitch" data-win-options="{title: 'Bluetooth', labelOn: '&#24320', labelOff: '&#20851'}">
+                </div>
+            </td>
+        </tr>
+
+        <!--第三个toggle 禁用-->
+        <tr>
+            <td>
+                Disable
+                <div class="detail">
+                    disabled: true
+                </div>
+            </td>
+            <td>
+                <div data-win-control="WinJS.UI.ToggleSwitch" data-win-options="{title: 'BitLocker', checked: true, disabled: true}">
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
